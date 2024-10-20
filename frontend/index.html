@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API User Registration/Login</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>User Registration/Login</h1>
+
+    <h2>Register</h2>
+    <input type="text" id="reg-username" placeholder="Username" />
+    <input type="password" id="reg-password" placeholder="Password" />
+    <button onclick="register()">Register</button>
+
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+
+    <div id="dashboard" style="display: none;">
+        <h2>Dashboard</h2>
+        <button id="api1" onclick="callApi1()" disabled>Call API 1</button>
+        <button id="api2" onclick="callApi2()" disabled>Call API 2</button>
+        <button id="api3" onclick="callApi3()" disabled>Call API 3</button>
+        <button id="api4" onclick="callApi4()" disabled>Call API 4</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
